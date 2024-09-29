@@ -1,0 +1,264 @@
+<!-- 
+### Exercício 2: Página de Produto Tecnológico
+
+**Objetivo:**
+Criar uma página de produto para uma tecnologia ou software fictício. Este exercício é mais guiado e os 
+alunos devem seguir uma estrutura semelhante à da página da escola de tecnologia que foi trabalhada em 
+aula.
+
+**Instruções:**
+1. **Cabeçalho:**
+   - Crie um cabeçalho com o nome do produto, acompanhado de um logo ou ícone.
+   - Adicione uma breve descrição do produto logo abaixo do nome, destacando o que ele faz.
+
+2. **Seções:**
+   - **Funcionalidades:** Crie uma lista (ordenada ou não ordenada) com as principais funcionalidades do 
+   produto.
+   - **Tecnologias Utilizadas:** Liste as tecnologias utilizadas para construir o produto 
+   (e.g., linguagens de programação, frameworks).
+   - **Depoimentos:** Inclua uma seção com depoimentos de "usuários" fictícios que recomendam o produto. 
+   - **Formulário de Interesse:** Adicione um formulário simples onde os usuários podem se inscrever para 
+   receber mais informações sobre o produto (nome, e-mail, área de interesse).
+
+3. **Rodapé:**
+   - Inclua um rodapé com informações de contato, links para redes sociais e direitos autorais.
+
+**Dicas:**
+- Curioso para saber como transformar sua página em algo mais visualmente atraente? Com CSS, você vai 
+poder estilizar cada detalhe e dar vida ao seu projeto! Em breve, você aprenderá a deixar suas páginas 
+com um visual profissional e cheio de estilo!
+
+freecodecamp.org
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+    <title>EchoGuard</title>
+    <link rel="icon" href="./imagens/logo.png">
+</head>
+<body>
+
+   <nav class="navbar">
+      <figure class="img-logo">
+         <img src="./imagens/logo.png" alt="logo">
+     </figure>
+      <ul class="nav-list">
+          <li><a href="#funcionalidades">| Funcionalidades |</a></li>
+          <li><a href="#tecnologias">| Tecnologias |</a></li>
+          <li><a href="#depoimentos">| Depoimentos |</a></li>
+          <li><a href="#contato">| Contato |</a></li>
+      </ul>
+  </nav>
+   
+   <header> 
+      <figure class="img-inicio">
+          <img src="./imagens/inicio.PNG" alt="logo">
+      </figure>
+  
+      <div class="header-texto">
+          <h1>Bem Vindo a <strong>EchoGuard</strong></h1>
+          <p class="title-texto">
+              Um software de segurança que utiliza a voz do usuário como uma chave de autenticação multifatorial para acesso a dispositivos e dados sensíveis.
+          </p>
+      </div>
+  </header>
+  
+  
+   <section class="funcionalidades-container">
+      <h3>Suas principais funcionalidades incluem:</h3>
+      <ul class="funcionalidades-item">
+         <li>Autenticação por Voz</li>
+         <li>Análise de Voz em Tempo Real</li>
+         <li>Proteção de Dados Sensíveis</li>
+         <li>Alertas e Notificações</li>
+         <li>Modo Silencioso</li>
+         <li>Relatórios de Segurança</li>
+      </ul>
+   </section>
+<br><br>
+
+  <!-- Example Code bootstrap-->
+  <h2>Tecnologias que usamos</h2>
+<br>
+  <div class="row">
+    <!-- Cartão 1 -->
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Python:</h5>
+          <p class="card-text">Para desenvolvimento de algoritmos de reconhecimento de voz e machine learning, linguagem de programação de alto nível, interpretada e de propósito geral, amplamente usada devido à sua simplicidade e versatilidade.</p>
+          <a href="#" class="btn btn-primary">Acesse Aqui</a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Cartão 2 -->
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">TensorFlow/Keras:</h5>
+          <p class="card-text">Para o desenvolvimento e treinamento de modelos de reconhecimento de voz, bibliotecas de código aberto populares usadas para construir e treinar modelos de aprendizado de máquina e redes neurais.</p>
+          <a href="#" class="btn btn-primary">Acesse Aqui</a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Cartão 3 -->
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Google Cloud Speech-to-Text</h5>
+          <p class="card-text">Para conversão de fala em texto, se for necessário um serviço de reconhecimento de voz baseado em nuvem, são dois serviços de reconhecimento de fala que permitem converter áudio.</p>
+          <a href="#" class="btn btn-primary">Acesse Aqui</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row mt-3">
+    <!-- Cartão 4 -->
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">PostgreSQL:</h5>
+          <p class="card-text">Para armazenar perfis de usuário e logs de acesso, sistema de gerenciamento de banco de dados relacional (RDBMS) de código aberto e altamente avançado. Ele é conhecido por sua robustez, flexibilidade e conformidade com padrões SQL</p>
+          <a href="#" class="btn btn-primary">Acesse Aqui</a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Cartão 5 -->
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">OAuth 2.0:</h5>
+          <p class="card-text">Para autenticação segura e autorização,  protocolo de autorização que permite que aplicativos de terceiros acessem recursos de um usuário hospedados em um servidor, de maneira segura sem a necessidade de expor as credenciais do usuário</p>
+          <a href="#" class="btn btn-primary">Acesse Aqui</a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Cartão 6 -->
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">PyTorch:</h5>
+          <p class="card-text">Alternativa para o desenvolvimento de modelos de deep learning, biblioteca de código aberto desenvolvida pelo Facebook para aprendizado de máquina e deep learning. É amplamente utilizada para criar e treinar modelos de redes neurais.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+ <!-- End Example Code -->
+<br><br>
+
+ <!-- Example Code -->  
+ <style>
+   .card {
+     background-color: #7596f4; /* Cor de fundo atualizada */
+     margin: 15px; /* Distanciamento entre as cartas */
+     width: 250px; /* Diminuir o tamanho das cartas */
+     color: white; /* Cor do texto para contraste */
+   }
+ 
+   .card .card-body {
+     padding: 10px; /* Distanciamento interno na parte do corpo da carta */
+   }
+ 
+   .card-img-top {
+     border-radius: 0.25rem; /* Arredondar os cantos da imagem */
+   }
+ </style>
+ 
+ <style>
+   h2 {
+     color: #e9e9f7; /* Cor do texto */
+     text-align: center; /* Centralizar o texto */
+   }
+ </style>
+ 
+ <h2>Depoimentos de usuários recomendando o EchoGuard</h2>
+ <div class="card-group">
+   <div class="card">
+      <img src="./imagens/img1.jpg" class="card-img-top" alt="Descrição da imagem" width="100%" height="180" />
+     <div class="card-body">
+       <h5 class="card-title">Maria Ferreira, CEO de uma Startup de Tecnologia</h5>
+       <p class="card-text">O EchoGuard transformou a maneira como gerenciamos a segurança dos nossos dispositivos. A autenticação por voz é incrivelmente precisa e rápida, proporcionando uma camada extra de proteção que nos dá total tranquilidade. Recomendo para qualquer empresa que priorize a segurança!"</p>
+       <p class="card-text"><small class="text-body-secondary">Última atualização há 3 minutos</small></p>
+     </div>
+   </div>
+
+   <div class="card">
+      <img src="./imagens/img2.png" class="card-img-top" alt="Descrição da imagem" width="100%" height="180" />
+     <div class="card-body">
+       <h5 class="card-title">Carlos Almeida, Diretor de TI em uma Empresa de Finanças</h5>
+       <p class="card-text">"Implementamos o EchoGuard em todos os nossos sistemas e o impacto foi imediato. Além de ser fácil de integrar com nossos sistemas existentes, a capacidade de combinar autenticação por voz com outros métodos multifatoriais elevou nossa segurança a um novo patamar. É uma solução indispensável para o setor financeiro."</p>
+       <p class="card-text"><small class="text-body-secondary">Última atualização há 20 minutos</small></p>
+     </div>
+   </div>
+
+   <div class="card">
+      <img src="./imagens/img3.png" class="card-img-top" alt="Descrição da imagem" width="100%" height="180" />
+     <div class="card-body">
+       <h5 class="card-title">Ana Santos, Desenvolvedora de Aplicativos Móveis</h5>
+       <p class="card-text">"Como desenvolvedora, sempre busco as melhores soluções para segurança em aplicativos. O EchoGuard se destaca por sua flexibilidade e eficiência. A integração com dispositivos IoT foi um bônus incrível, permitindo que meus clientes tivessem controle seguro sobre suas casas inteligentes. Estou impressionada!"</p>
+       <p class="card-text"><small class="text-body-secondary">Última atualização há 56 minutos</small></p>
+     </div>
+   </div>
+ </div>
+ <!-- End Example Code -->
+
+         <hr>
+         <center>
+            <h2>Entre em contato conosco</h2>
+            <button><a href="./contato.html">Click aqui para entrar em contato</a></button>
+         </center>
+
+         <hr>
+
+   <footer>
+      <center>
+         <h4>Contatos:</h4>
+         <p>Telefone: <i>31 98765-4321</i></p>
+         <p>Email: <i>contato@echoguard.com.br</i></p>
+
+         <a href="https://www.facebook.com" target="_blank">
+            <img src="./imagens/face.png" alt="logo facebook" width="30">
+         </a>
+
+         <a href="https://www.linkedin.com/" target="_blank">
+            <img src="./imagens/link.png" alt="logo linkedin" width="30">
+         </a>
+
+         <a href="https://www.instagram.com/" target="_blank">
+            <img src="./imagens/insta.png" alt="logo instagram" width="30">
+         </a>
+
+         <a href="https://web.whatsapp.com/" target="_blank">
+            <img src="./imagens/wapp.png" alt="logo whatsapp" width="30">
+         </a>
+
+      </center>
+
+      <hr>
+
+      <p>&copy; 2024 Davidson Oliveira. Todos os direitos reservados.</p>
+   </footer>
+   
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+   integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+   crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+   integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+   crossorigin="anonymous"></script>
+
+</body>
+</html>
