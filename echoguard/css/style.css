@@ -52,7 +52,7 @@ header {
     display: flex;
     padding: 50px 0;
     text-align: center;
-    color: #fefeff;
+    color: #201f1f;
 }
 
 .img-logo img {
@@ -62,7 +62,7 @@ header {
 
 .header-texto h1 {
     font-family:Georgia, 'Times New Roman', Times, serif;
-    color: #d4c3f5;
+    color: #201f1f;
     font-size: 5.5em;
     margin-bottom: 60px;
     text-align: center;
@@ -71,8 +71,6 @@ header {
 .title-texto {
     font-size: 1.5em;
 }
-
-
 
 /* Estilo das listas de funcionalidades e tecnologias */
 .funcionalidades-container {
@@ -88,7 +86,7 @@ header {
 .funcionalidades-container h3 {
     font-size: 1.8em; 
     margin-bottom: 20px; 
-    color: #fefeff;
+    color: #201f1f;
 }
 
 .funcionalidades-item {
@@ -99,7 +97,7 @@ header {
 
 .funcionalidades-item li {
     font-size: 1.2em; 
-    color: #fefeff; 
+    color: #020202; 
     padding: 10px 0; 
     border-bottom: 1px solid #ddd; 
 }
@@ -156,18 +154,8 @@ button a {
     color: white;
 }
 
+
 /* Estilo para o rodapé */
-footer {
-    background-color: #004d40;
-    padding: 20px 0;
-    color: white;
-    text-align: center;
-}
-
-footer p, footer h4 {
-    margin-bottom: 10px;
-}
-
 footer img {
     margin: 0 10px;
     transition: transform 0.3s;
